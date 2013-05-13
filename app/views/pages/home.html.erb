@@ -1,3 +1,7 @@
+<% if user_signed_in? %>
+#Painel ADM
+<% else %>
+
 <div class="hero-unit">
 
 <h1>Bem vindo ao One Month Rails</h1>
@@ -6,8 +10,10 @@
 	<%= link_to "One Month Rails", "http://onemonthrails.com" %>
 </p>
 <p>
-	<%= link_to "Sign Up Right Now!", "#", class: "btn btn-primary btn-large" %>
+	<%= link_to "Sign Up Right Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
 </p>
 
 </div>
+
+<% end %>
 
