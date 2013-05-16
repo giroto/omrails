@@ -5,7 +5,7 @@
 </p>
 <p>
 	<strong>
-Posted by <%= pin.user.name %>
+Posted by <%= link_to pin.user.name, pin.user %> em <%= pin.created_at.strftime("%d/%m/%y as %H:%M") %>
 	</strong>
 </p>
     <% if current_user == pin.user %>
