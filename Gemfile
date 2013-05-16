@@ -31,6 +31,9 @@ gem 'devise'
 gem 'simple_form'
 gem 'paperclip', "~> 3.0"
 gem 'aws-sdk'
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
